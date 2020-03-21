@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D4Y Liquid Particles</title>
-    <link rel="stylesheet" href="style.css">
-    <source src="script.js" defer>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <canvas id="canvas1"></canvas>
     <div class="container">
-        <div class="content">
-            <nav>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-            </nav>
-            <section class="mainBlock">
-                <div>
-                    <p>Matt Day Web Dev</p>
-                    
-                </div>
-                <section class="topBlock">
-                    <div>
-                        <p>Matt Day Web Dev</p>
-                    </div>
-                </section>
-                <section class="bottomBlock">
-                    <div>
-                        <p>Matt Day Web Dev</p>
-                    </div>
-                </section>
-            </section>
-        </div>
+      <div class="content">
+        <nav>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </nav>
+        <section class="mainBlock">
+          <div>
+            <p>Matt Day Web Dev</p>
+          </div>
+          <section class="topBlock">
+            <div>
+              <p>Matt Day Web Dev</p>
+            </div>
+          </section>
+          <section class="bottomBlock">
+            <div>
+              <p>Matt Day Web Dev</p>
+            </div>
+          </section>
+        </section>
+      </div>
     </div>
-</body>
+    <svg>
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0 0  0 0 0 0 0  0 0 0 0 9 -9"
+            result="goo"
+          />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+        </filter>
+      </defs>
+    </svg>
+  </body>
 </html>
