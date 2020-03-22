@@ -19,7 +19,7 @@ class Button {
     this.y = y;
     this.width = width;
     this.height = height;
-    this.baseY = x;
+    this.baseX = x;
   }
   update() {
     let directionX = 2.2;
@@ -123,7 +123,7 @@ const particleArray = [];
 const numberOfParticles = 80;
 function createParticles() {
   for (let i = 0; i < numberOfParticles; i++) {
-    const x = Math.random() * 60 + 200;
+    const x = Math.random() * 60 + 300;
     const y = Math.random() * canvas.height;
     const size = Math.random() * 20 + 5;
     const weight = Math.random() * 0.2 + 1;
